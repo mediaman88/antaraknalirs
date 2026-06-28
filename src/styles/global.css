@@ -227,8 +227,11 @@ b,strong{font-weight:600}
 .arr-steps li{position:relative;padding-left:30px;font-size:13.5px;line-height:1.5;color:#D8D0B5;counter-increment:s}
 .arr-steps li::before{content:counter(s);position:absolute;left:0;top:-1px;width:20px;height:20px;border-radius:50%;
   background:var(--terra);color:#fff;font-family:var(--mono);font-size:11px;display:flex;align-items:center;justify-content:center}
-.closing-conf{margin-top:18px;font-family:var(--mono);font-size:12px;line-height:1.9;color:#E9DFC2;border-top:1px solid rgba(201,162,39,.3);padding-top:14px}
-.closing-conf .leg{color:var(--terra2);margin-right:8px}
+.closing-conf{margin-top:18px;font-family:var(--mono);font-size:12px;line-height:1.5;color:#E9DFC2;border-top:1px solid rgba(201,162,39,.3);padding-top:14px}
+.closing-conf .cf-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
+.closing-conf .cf-row:last-child{margin-bottom:0}
+.closing-conf .cf-row > span:last-child{flex:1;padding-top:2px}
+.closing-conf .leg{color:var(--terra2);margin-right:0;flex:0 0 auto;white-space:nowrap}
 .closing-foot{text-align:center;font-family:var(--disp);font-style:italic;font-size:18px;color:var(--terra2);margin-top:26px}
 .closing-scene{margin:24px -24px -40px;display:block;width:calc(100% + 48px)}
 .closing-scene svg{width:100%;height:auto;display:block}

@@ -720,7 +720,8 @@
         { "cat": "info", "text": "The Airport Express train reaches Central in about 24 minutes &mdash; faster and easier than a taxi at almost any time of day." },
         { "cat": "food", "text": "Egg waffles (gai daan jai) from a street stall are a good anytime snack between sights." },
         { "cat": "scenic", "text": "Photograph the skyline from the Kowloon side at blue hour, just after sunset, when the building lights and the sky are balanced." },
-        { "cat": "fact", "text": "Hong Kong has more skyscrapers over 150 metres than any other city in the world, packed into one of the most mountainous urban footprints on earth." }
+        { "cat": "fact", "text": "Hong Kong has more skyscrapers over 150 metres than any other city in the world, packed into one of the most mountainous urban footprints on earth." },
+        { "cat": "info", "text": "Oneworld Sapphire status grants Business Class lounge access at HKG on any oneworld flight, regardless of cabin booked. The Wing (Business, near Gate 65) is generally rated Cathay Pacific's best lounge &mdash; noodle bar, champagne bar, and private cabanas. The Pier (Business, near Gate 1) is a strong second choice and usually quieter." }
       ]
     }
   ],

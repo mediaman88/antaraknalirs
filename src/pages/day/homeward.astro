@@ -26,7 +26,7 @@ const iconFor = (k: string) => (k === 'flight' ? ICON.fly : ICON.ge);
 
     <div class="closing-conf">
       {c.conf.map((l: any) => (
-        <div><span class="leg" set:html={l.leg} /><span set:html={l.detail} /></div>
+        <div class="cf-row"><span class="leg" set:html={l.leg} /><span set:html={l.detail} /></div>
       ))}
     </div>
     <div class="closing-foot" set:html={c.foot} />
