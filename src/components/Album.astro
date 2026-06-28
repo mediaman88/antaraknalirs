@@ -1,0 +1,23 @@
+---
+interface Stop { name: string; desc?: string; time?: string; photos: string[]; }
+const { stops, daySlug } = Astro.props as { stops: Stop[]; daySlug: string };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<div class="album">
+  {stops.map((s) => (
+    <div class="album-stop">
+      <div class="album-stop-h">
+        <span class="album-stop-name" set:html={s.name} />
+        {s.time && <span class="album-stop-time" set:html={s.time} />}
+      </div>
+      {s.desc && <div class="album-stop-desc" set:html={s.desc} />}
+      <div class="album-grid">
+        {s.photos.map((p) => (
+          <a class="album-photo" href={`${base}/photos/${daySlug}/${p}`} target="_blank" rel="noopener">
+            <img src={`${base}/photos/${daySlug}/${p}`} alt={s.name} loading="lazy" />
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>

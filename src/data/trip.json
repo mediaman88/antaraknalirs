@@ -1,0 +1,777 @@
+{
+  "meta": {
+    "title": "Todd & Kara · The Grand Journey 2026",
+    "headerTitle": "The Grand Journey",
+    "headerDates": "7 JUN&ndash;11 JUL &rsquo;26"
+  },
+  "cover": {
+    "kicker": "Finland &middot; India &middot; Maldives &middot; Sri Lanka &middot; Hong Kong",
+    "title_html": "Twenty-Five Years, <em>One Grand Journey</em>",
+    "route": "Dallas &middot; Helsinki &middot; Delhi &middot; Agra &middot; Varanasi &middot; Mumbai &middot; Maldives &middot; Sri Lanka &middot; Hong Kong &middot; Dallas",
+    "dates": "June 7 &ndash; July 11, 2026",
+    "blurb": "Thirty-five days, six countries, and a quarter-century of marriage celebrated from a Baltic sauna to a Ganges sunrise to a leopard's dawn in the Sri Lankan scrub."
+  },
+  "itinerary": [
+    { "date": "Jun 7", "dow": "Sun", "city": "Dallas &rarr; Helsinki", "stay": "Overnight flight", "move": "BA 6054, depart 4:50pm", "kind": "fly", "slug": null },
+    { "date": "Jun 8", "dow": "Mon", "city": "Helsinki, Finland", "stay": "Hotel U14, Autograph Collection", "move": "Suomenlinna &middot; Löyly Sauna", "kind": "rest", "slug": "helsinki" },
+    { "date": "Jun 9", "dow": "Tue", "city": "Helsinki &rarr; Delhi", "stay": "Overnight flight", "move": "Finnair 121, depart 6:30pm", "kind": "fly", "slug": null },
+    { "date": "Jun 10", "dow": "Wed", "city": "Delhi &rarr; Agra, India", "stay": "ITC Mughal", "move": "Drive Yamuna Expressway", "kind": "drive", "slug": "agra" },
+    { "date": "Jun 11", "dow": "Thu", "city": "Agra &rarr; Varanasi", "stay": "BrijRama Palace", "move": "Vande Bharat Express 20176", "kind": "train", "slug": "varanasi" },
+    { "date": "Jun 12", "dow": "Fri", "city": "Varanasi, India", "stay": "BrijRama Palace", "move": "Ghats &middot; Sarnath", "kind": "rest", "slug": null },
+    { "date": "Jun 13", "dow": "Sat", "city": "Varanasi, India", "stay": "BrijRama Palace", "move": "Heritage walk &middot; silk shopping", "kind": "rest", "slug": null },
+    { "date": "Jun 14", "dow": "Sun", "city": "Varanasi &rarr; Mumbai", "stay": "St. Regis Mumbai", "move": "IndiGo 6E6544, 10:45am", "kind": "fly", "slug": null },
+    { "date": "Jun 15", "dow": "Mon", "city": "Mumbai &rarr; Maldives", "stay": "St. Regis Vommuli", "move": "IndiGo 6E1131, 10:50am", "kind": "fly", "slug": "maldives" },
+    { "date": "Jun 16", "dow": "Tue", "city": "Maldives", "stay": "St. Regis Vommuli", "move": "Private beach dinner", "kind": "rest", "slug": null },
+    { "date": "Jun 17", "dow": "Wed", "city": "Maldives", "stay": "St. Regis Vommuli", "move": "Diving &middot; dolphin cruise", "kind": "rest", "slug": null },
+    { "date": "Jun 18", "dow": "Thu", "city": "Maldives", "stay": "St. Regis Vommuli", "move": "House reef &middot; spa", "kind": "rest", "slug": null },
+    { "date": "Jun 19", "dow": "Fri", "city": "Mal&eacute; &rarr; Colombo &rarr; Trincomalee", "stay": "Amaranthé Bay Resort &amp; Spa", "move": "UL 116, 3:35pm + 4hr drive", "kind": "fly", "slug": "trincomalee" },
+    { "date": "Jun 20", "dow": "Sat", "city": "Trincomalee, Sri Lanka", "stay": "Amaranthé Bay Resort &amp; Spa", "move": "Whale watching &middot; Pigeon Island", "kind": "rest", "slug": null },
+    { "date": "Jun 21", "dow": "Sun", "city": "Trincomalee, Sri Lanka", "stay": "Amaranthé Bay Resort &amp; Spa", "move": "Fort Frederick &middot; hot springs", "kind": "rest", "slug": null },
+    { "date": "Jun 22", "dow": "Mon", "city": "Somawathiya &rarr; Sigiriya", "stay": "Jetwing Vil Uyana", "move": "Dawn elephant safari &middot; Dambulla", "kind": "drive", "slug": "sigiriya" },
+    { "date": "Jun 23", "dow": "Tue", "city": "Anuradhapura + Pidurangala", "stay": "Jetwing Vil Uyana", "move": "Bo Tree &middot; sunset climb", "kind": "drive", "slug": "anuradhapura" },
+    { "date": "Jun 24", "dow": "Wed", "city": "Sigiriya dawn + Minneriya", "stay": "Jetwing Vil Uyana", "move": "5am climb &middot; Elephant Gathering", "kind": "rest", "slug": "minneriya" },
+    { "date": "Jun 25", "dow": "Thu", "city": "Polonnaruwa Ancient City", "stay": "Jetwing Vil Uyana", "move": "Bicycle safari &middot; Gal Vihara", "kind": "drive", "slug": "polonnaruwa" },
+    { "date": "Jun 26", "dow": "Fri", "city": "Kandy", "stay": "The Radh Hotel", "move": "Peradeniya &middot; Temple of the Tooth puja", "kind": "drive", "slug": "kandy" },
+    { "date": "Jun 27", "dow": "Sat", "city": "Kandy &rarr; Nuwara Eliya", "stay": "Heritance Tea Factory", "move": "Tea country drive &middot; high tea", "kind": "train", "slug": "nuwara-eliya" },
+    { "date": "Jun 28", "dow": "Sun", "city": "Nuwara Eliya &rarr; Ella", "stay": "98 Acres Resort &amp; Spa", "move": "Scenic train &middot; Nine Arch Bridge", "kind": "train", "slug": "ella" },
+    { "date": "Jun 29", "dow": "Mon", "city": "Ella", "stay": "98 Acres Resort &amp; Spa", "move": "Little Adam's Peak &middot; Ella Rock", "kind": "rest", "slug": null },
+    { "date": "Jun 30", "dow": "Tue", "city": "Ella", "stay": "98 Acres Resort &amp; Spa", "move": "Ravana Falls &middot; organic farm", "kind": "rest", "slug": null },
+    { "date": "Jul 1", "dow": "Wed", "city": "Ella &rarr; Arugam Bay", "stay": "Hideaway Resort", "move": "Pottuvil Lagoon &middot; surf sunset", "kind": "drive", "slug": "arugam-bay" },
+    { "date": "Jul 2", "dow": "Thu", "city": "Arugam Bay + Kumana", "stay": "Hideaway Resort", "move": "Full-day Kumana safari", "kind": "rest", "slug": null },
+    { "date": "Jul 3", "dow": "Fri", "city": "Arugam Bay &rarr; Yala", "stay": "Wild Coast Tented Lodge", "move": "Dawn leopard safari", "kind": "drive", "slug": "yala" },
+    { "date": "Jul 4", "dow": "Sat", "city": "Yala", "stay": "Wild Coast Tented Lodge", "move": "Anniversary day &middot; ocean pool", "kind": "rest", "slug": null },
+    { "date": "Jul 5", "dow": "Sun", "city": "Yala &rarr; Udawalawe", "stay": "Centauria Wild Resort", "move": "Elephant safari &middot; Transit Home", "kind": "drive", "slug": "udawalawe" },
+    { "date": "Jul 6", "dow": "Mon", "city": "Udawalawe &rarr; Galle Fort", "stay": "Prince of Galle", "move": "Rampart sunset walk", "kind": "drive", "slug": "galle" },
+    { "date": "Jul 7", "dow": "Tue", "city": "Galle Fort", "stay": "Prince of Galle", "move": "Barefoot Gallery &middot; tailoring", "kind": "rest", "slug": null },
+    { "date": "Jul 8", "dow": "Wed", "city": "Galle &rarr; Colombo &rarr; HKG", "stay": "Overnight flight", "move": "Ministry of Crab &middot; CX612 00:50", "kind": "fly", "slug": null },
+    { "date": "Jul 9", "dow": "Thu", "city": "Hong Kong", "stay": "Sheraton Hong Kong Hotel &amp; Towers", "move": "Arrive 9:10am, CX612", "kind": "rest", "slug": null },
+    { "date": "Jul 10", "dow": "Fri", "city": "Hong Kong", "stay": "Sheraton Hong Kong Hotel &amp; Towers", "move": "Dim sum &middot; harbour", "kind": "rest", "slug": null },
+    { "date": "Jul 11", "dow": "Sat", "city": "Hong Kong &rarr; Dallas", "stay": "Home", "move": "CX876 departs 4:05pm", "kind": "fly", "slug": "homeward" }
+  ],
+  "confirmations": {
+    "flights": [
+      { "route": "DFW &rarr; HEL", "detail": "British Airways 6054 &middot; Jun 7&ndash;8", "ref": "" },
+      { "route": "HEL &rarr; DEL", "detail": "Finnair 121 &middot; Jun 9&ndash;10", "ref": "" },
+      { "route": "VNS &rarr; BOM", "detail": "IndiGo 6E6544 &middot; Jun 14", "ref": "MCJ82A" },
+      { "route": "BOM &rarr; MLE", "detail": "IndiGo 6E1131 &middot; Jun 15", "ref": "MCJ82A" },
+      { "route": "MLE &rarr; CMB", "detail": "SriLankan UL 116 &middot; Jun 19", "ref": "" },
+      { "route": "CMB &rarr; HKG", "detail": "Cathay Pacific CX612 &middot; Business &middot; Jul 9", "ref": "E3KDKS" },
+      { "route": "HKG &rarr; DFW", "detail": "Cathay Pacific CX876 &middot; Premium Economy &middot; Jul 11", "ref": "E3IZ4C" }
+    ],
+    "ground": [
+      { "route": "Agra Cantt &rarr; Banaras (BNRS)", "detail": "Vande Bharat Express 20176, Executive Class &middot; Jun 11, 6:00am", "ref": "2516857645" },
+      { "route": "Ambewela &rarr; Ella", "detail": "Train 11005, 1st Class Observation &middot; Jun 28, 9:30am", "ref": "15217051" }
+    ]
+  },
+  "gateway": {
+    "arriving": {
+      "sub": "Arriving &middot; Helsinki",
+      "lines": [
+        "Land Helsinki-Vantaa 10:45am. Immigration is efficient, roughly 30 minutes",
+        "Airport Express Ring Rail to Helsinki Central Station &mdash; 30 minutes, &euro;5.50pp, every 10 minutes",
+        "Hotel U14 is steps from Market Square &mdash; ask about early check-in, officially 3pm"
+      ]
+    },
+    "departing": {
+      "sub": "Departing &middot; Colombo",
+      "lines": [
+        "CX612 departs Colombo 00:50 &mdash; a midnight flight, so the whole of Jul 8 belongs to you",
+        "Allow a minimum of 3 hours before international departure, plus a buffer for Colombo traffic",
+        "Dinner at Ministry of Crab, then straight to CMB &mdash; no hotel needed for the short overnight"
+      ]
+    }
+  },
+  "days": [
+    {
+      "slug": "helsinki",
+      "img": "helsinki",
+      "kicker": "Day 1&ndash;2 &middot; Mon&ndash;Tue, June 8&ndash;9",
+      "place": "HELSINKI",
+      "title": "Helsinki",
+      "epithet": "Midsummer light on the Baltic",
+      "tagline": "A 32-hour layover, used properly",
+      "intro": "The journey begins with a long Nordic afternoon: a fortress island in the harbour, a wood-fired sauna built like a rock on the shoreline, and a tasting menu built entirely from what Finland itself can grow, forage, or pull from the sea. By the time the plane to Delhi leaves, you will already feel like you have been somewhere.",
+      "plan": {
+        "label": "Suomenlinna & the Shoreline",
+        "items": [
+          { "name": "Market Square (Kauppatori)", "desc": "Waterfront stalls for smoked salmon, fried vendace, and fresh crayfish, with harbour ferries coming and going all afternoon." },
+          { "name": "Suomenlinna Sea Fortress", "desc": "An 18th-century island fortress reached by a 15-minute public ferry &mdash; stone ramparts, sea bastions, and roughly 800 year-round residents." },
+          { "name": "Löyly Sauna", "desc": "A faceted wooden sauna house on the Hernesaari shoreline. Traditional wood-burning and smoke saunas, both with direct access to a cold-plunge into the Baltic." },
+          { "name": "Design District", "desc": "Marimekko and Iittala flagships on Esplanadi, a short walk from the Temppeliaukio Rock Church carved into granite bedrock." }
+        ]
+      },
+      "lodging": {
+        "place": "Helsinki",
+        "name": "Hotel U14, Autograph Collection",
+        "desc": "A Marriott Bonvoy property on Unioninkatu, a few steps from Market Square and the Esplanadi.",
+        "confirmations": ["Marriott Bonvoy &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [],
+      "restaurants": [
+        { "name": "Ravintola Skörd", "time": "7:00pm", "desc": "A seven-course tasting menu built entirely from Finnish ingredients &mdash; no pepper, no avocado, nothing from outside Finland's borders except salt. Paired with Finnish berry wines." },
+        { "name": "Café Ekberg", "time": "Morning", "desc": "Helsinki's oldest café, established 1852. Famous for cardamom rolls and rye bread." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Swimwear is required at all times in the Löyly saunas &mdash; mixed sessions, separate changing rooms." },
+        { "cat": "fact", "text": "In June, Helsinki barely gets dark. The harbour and esplanade at midnight in soft twilight is one of the city's quiet pleasures." },
+        { "cat": "shop", "text": "Marimekko and Iittala goods generally run 20&ndash;30% cheaper here than US retail pricing." },
+        { "cat": "drink", "text": "Order a Finnish berry wine with dinner &mdash; cloudberry and lingonberry both appear on tasting menus in June." }
+      ]
+    },
+    {
+      "slug": "agra",
+      "img": "agra",
+      "kicker": "Day 4 &middot; Wednesday, June 10",
+      "place": "AGRA",
+      "title": "Agra",
+      "epithet": "The Taj at golden hour",
+      "tagline": "Marble that changes colour with the sky",
+      "intro": "A pre-dawn landing in Delhi and a smooth drive down the Yamuna Expressway puts you in Agra by mid-morning. The afternoon belongs entirely to the Taj Mahal &mdash; first up close, then from across the river as the light turns gold.",
+      "plan": {
+        "label": "The Taj & the River",
+        "items": [
+          { "name": "Taj Mahal", "desc": "Foreign-tourist entry, with a licensed guide hired at the gate well worth the cost for the architectural history. Allow 1.5&ndash;2 hours for the mausoleum, mosque, and gardens." },
+          { "name": "Mehtab Bagh", "desc": "A Mughal garden directly across the Yamuna River from the Taj. At sunset the reflection in the river is one of India's classic photographs, with far fewer crowds." }
+        ]
+      },
+      "lodging": {
+        "place": "Agra",
+        "name": "ITC Mughal, A Luxury Collection Resort & Spa",
+        "desc": "Mughal-inspired gardens and multiple restaurants, including the celebrated Peshawri, positioned perfectly for an early Taj Mahal visit the following morning.",
+        "confirmations": ["Marriott Bonvoy &mdash; <b>confirmed</b>", "1 night"]
+      },
+      "wineries": [],
+      "restaurants": [
+        { "name": "Peshawri", "time": "Dinner", "desc": "Frontier and Mughal cuisine inside the ITC Mughal &mdash; the dal bukhara, slow-cooked 18 hours, is one of the best meals of the trip." },
+        { "name": "Pinch of Spice", "time": "Lunch", "desc": "A local favourite for Mughal cuisine, Agra petha sweets, and biryani between sightseeing." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "The Taj Mahal is closed every Friday &mdash; not an issue on a Wednesday visit, but worth checking for any schedule change." },
+        { "cat": "food", "text": "Bedai with aloo sabzi, sold by street vendors near Sadar Bazaar, is the traditional Agra breakfast." },
+        { "cat": "scenic", "text": "Sunrise over the Yamuna River plains, seen from the expressway, is some of the flattest, most extraordinary light in India." }
+      ]
+    },
+    {
+      "slug": "varanasi",
+      "img": "varanasi",
+      "kicker": "Day 5&ndash;8 &middot; Thu&ndash;Sun, June 11&ndash;14",
+      "place": "VARANASI",
+      "title": "Varanasi",
+      "epithet": "The oldest living city on the Ganges",
+      "tagline": "Fire, water, and five thousand years of continuous habitation",
+      "intro": "The Vande Bharat Express carries you east through the Gangetic plains to the holiest city in India. Three and a half nights on the ghats means dawn boat rides, the nightly Ganga Aarti fire ceremony, and the narrow lanes of the old city, all built around a river that has never stopped moving.",
+      "plan": {
+        "label": "The Ghats & the River",
+        "items": [
+          { "name": "Dashashwamedh Ghat", "desc": "Varanasi's main ghat, where the Ganga Aarti ceremony unfolds every evening &mdash; dozens of priests, fire, conch shells, and chanting watched by hundreds." },
+          { "name": "Dawn boat ride from Munshi Ghat", "desc": "A private rowing boat before sunrise, gliding past pilgrims bathing and temples glowing in the first light &mdash; among the most memorable two hours in India." },
+          { "name": "Sarnath", "desc": "Eleven kilometres from Varanasi, where the Buddha gave his first sermon. The Dhamek Stupa marks the spot, alongside a museum holding the original Lion Capital of Ashoka." },
+          { "name": "Old city heritage walk", "desc": "Narrow galis lined with temples, chai stalls, and silk workshops &mdash; the layered chaos of thousands of years of continuous habitation." }
+        ]
+      },
+      "lodging": {
+        "place": "Varanasi",
+        "name": "BrijRama Palace",
+        "desc": "Built directly into the ghats at Munshi Ghat, with a private terrace above the river itself and resident teachers for dawn meditation sessions.",
+        "confirmations": ["3 nights &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [],
+      "restaurants": [
+        { "name": "Baati Chokha", "time": "Dinner", "desc": "The definitive Varanasi meal &mdash; claypot dal, baked wheat baati, and roasted vegetable chokha." },
+        { "name": "Kashi Chaat Bhandar", "time": "Anytime", "desc": "Legendary street food &mdash; tamatar chaat with sour tamarind, eaten standing at the counter." },
+        { "name": "Lassi shops near Dashashwamedh Ghat", "time": "Anytime", "desc": "Thick, cold lassi served in clay cups &mdash; Varanasi's most iconic drink." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Manikarnika Ghat is a working cremation ground. Photography is not permitted &mdash; observe respectfully from a distance." },
+        { "cat": "fact", "text": "A private guided meditation at dawn on the ghat terrace, arranged through the hotel, is one of the most significant experiences of the whole trip." },
+        { "cat": "shop", "text": "Banarasi silk weavers, arranged through the hotel, are a reputable source for genuine local textiles." },
+        { "cat": "drink", "text": "Pizzeria Vatika Café is a good riverside option for fresh juice and a break from spice." }
+      ]
+    },
+    {
+      "slug": "maldives",
+      "img": "maldives",
+      "kicker": "Day 9&ndash;12 &middot; Mon&ndash;Thu, June 15&ndash;19",
+      "place": "DHAALU ATOLL",
+      "title": "Maldives",
+      "epithet": "Overwater stillness",
+      "tagline": "House reef, dolphins, and the widest sky on the trip",
+      "intro": "Four nights on Vommuli Island, with an overwater villa whose deck steps directly into the lagoon. June is peak season for whale sharks and spinner dolphins, and the equatorial night sky here has essentially zero light pollution.",
+      "plan": {
+        "label": "Reef & Resort",
+        "items": [
+          { "name": "House reef snorkelling", "desc": "Blacktip reef sharks, sea turtles, and manta rays directly below the overwater villas, best in early morning light." },
+          { "name": "Dolphin sunset cruise", "desc": "Spinner dolphins are prolific in Maldivian waters in June, often leaping at the bow as the sun sets." },
+          { "name": "St. Regis Spa", "desc": "Underwater-inspired treatment rooms and traditional Maldivian healing therapies, including couple's massage." }
+        ]
+      },
+      "lodging": {
+        "place": "Maldives",
+        "name": "St. Regis Maldives Vommuli Resort",
+        "desc": "An overwater villa resort on Vommuli Island in Dhaalu Atoll, reached by speedboat or seaplane transfer from Malé.",
+        "confirmations": ["4 nights &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [],
+      "restaurants": [
+        { "name": "Orientale", "time": "Dinner", "desc": "Fine dining with Indian Ocean views &mdash; Maldivian tuna, lobster, and coconut-based dishes. Reserve a sunset table." },
+        { "name": "Whale Bar", "time": "Sunset", "desc": "An overwater bar at the island's tip, the best sunset spot on the property." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "A private beach dinner is arranged for the second evening, set directly on the sand with lanterns and an Indian Ocean backdrop." },
+        { "cat": "food", "text": "Ask for mas huni at breakfast &mdash; shredded smoked tuna with coconut and chilli, served with fresh roshi flatbread." },
+        { "cat": "fact", "text": "The Maldives sits on the equator with essentially no light pollution &mdash; the Milky Way is visible from the villa deck on clear nights." }
+      ]
+    },
+    {
+      "slug": "trincomalee",
+      "img": "trincomalee",
+      "kicker": "Day 13&ndash;15 &middot; Fri&ndash;Sun, June 19&ndash;22",
+      "place": "TRINCOMALEE",
+      "title": "Trincomalee",
+      "epithet": "Whales, reefs, and a lagoon at the door",
+      "tagline": "East coast Sri Lanka in its calmest season",
+      "intro": "A short flight and a long drive bring you into Sri Lanka proper, arriving late at a lagoon-set resort outside Trincomalee. June is peak whale-watching season on the east coast, and the beaches here are among the finest in the country.",
+      "plan": {
+        "label": "Whales, Reefs & Forts",
+        "items": [
+          { "name": "Whale watching, Trincomalee Harbour", "desc": "Blue whales, sperm whales, and spinner dolphins are common in June, with sea turtles and seabirds offshore." },
+          { "name": "Pigeon Island National Park", "desc": "Sri Lanka's best snorkelling &mdash; blacktip reef sharks, sea turtles, and colourful coral in excellent June visibility." },
+          { "name": "Koneswaram Temple", "desc": "A dramatic Hindu temple on a clifftop above the ocean, dating to at least the 3rd century BC, best visited at sunset." },
+          { "name": "Fort Frederick", "desc": "A Dutch and British colonial fort, still garrisoned, known for the spotted deer that wander freely through its grounds." },
+          { "name": "Kanniya Hot Springs", "desc": "Seven ancient natural spring wells, each a different temperature &mdash; a unique geological curiosity." }
+        ]
+      },
+      "lodging": {
+        "place": "Trincomalee",
+        "name": "Amaranthé Bay Resort & Spa",
+        "desc": "A boutique resort built within a palm grove at the edge of the Pillaikulam Aru lagoon &mdash; quieter and more private than a beachfront stay, with abundant birdlife visible from the room.",
+        "confirmations": ["3 nights &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [
+        { "name": "Brown Booby & seabirds, offshore", "time": "Dawn", "desc": "Spotted on the whale-watching boat, alongside Brahminy Kite and Little Tern along the nesting beaches." },
+        { "name": "Spot-billed Pelican, Trinco Harbour", "time": "Anytime", "desc": "Common around the harbour, with Painted Stork and Indian Pond Heron in the coastal lagoons." }
+      ],
+      "restaurants": [
+        { "name": "ISSO Trincomalee", "time": "Dinner", "desc": "The best seafood in town &mdash; a seafood platter for two, grilled whole fish, and calamari curry straight off the local boats." },
+        { "name": "Café on the 18th, Uppuveli", "time": "Breakfast", "desc": "Banana porridge, overnight oats, and coconut rotti &mdash; good pre-whale-watching fuel." },
+        { "name": "Dutch Bank Café", "time": "Anytime", "desc": "Famous for kottu roti, Trincomalee's most iconic street food." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Book the Junior Suite with private jacuzzi if possible &mdash; bay windows over the lagoon make it one of the best rooms in Sri Lanka." },
+        { "cat": "scenic", "text": "Marble Beach is air-force controlled, very clean, and largely missed by other tourists." },
+        { "cat": "fact", "text": "The lagoon setting at the resort produces excellent birding directly from the room balcony at dawn." }
+      ]
+    },
+    {
+      "slug": "sigiriya",
+      "img": "sigiriya",
+      "kicker": "Day 16 &middot; Monday, June 22",
+      "place": "SIGIRIYA",
+      "title": "Somawathiya &amp; Sigiriya",
+      "epithet": "Elephants, an ancient stupa, and a cave temple",
+      "tagline": "The day the journey turns inland",
+      "intro": "A dawn safari through Somawathiya's floodplains &mdash; home to the largest elephant concentration in Sri Lanka &mdash; gives way to an afternoon drive west, with a stop at the rock-cut Dambulla Cave Temple en route to four nights based in the Cultural Triangle.",
+      "plan": {
+        "label": "Floodplains to Cave Temple",
+        "items": [
+          { "name": "Somawathiya National Park", "desc": "Vast floodplains of the Mahaweli River with around 400 elephants in the park and surrounds, plus deer, jackals, and crocodiles at the shrinking dry-season water basins." },
+          { "name": "Somawathiya Chaitya", "desc": "A 2,200-year-old Buddhist stupa on the riverbank, said to enshrine a tooth relic of the Buddha &mdash; sacred ground inside a wildlife park, unusual anywhere in Asia." },
+          { "name": "Dambulla Cave Temple", "desc": "A UNESCO site with 150 Buddha statues across five cave complexes, reached by a barefoot climb of roughly 200 steps." }
+        ]
+      },
+      "lodging": {
+        "place": "Sigiriya",
+        "name": "Jetwing Vil Uyana",
+        "desc": "Thatched cabanas built over a wetland lake with an infinity pool, and exceptional birding directly from the deck &mdash; the base for four nights in the Cultural Triangle.",
+        "confirmations": ["4 nights &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [
+        { "name": "Sri Lanka Junglefowl, Somawathiya", "time": "Dawn", "desc": "The endemic national bird, alongside Painted Stork and Spot-billed Pelican across the villus." },
+        { "name": "Black-necked Stork, Somawathiya", "time": "Dawn", "desc": "Rare and elusive &mdash; Somawathiya is one of the best locations in the country to find one." }
+      ],
+      "restaurants": [
+        { "name": "Jetwing Vil Uyana dining room", "time": "Dinner", "desc": "A traditional rice-and-curry buffet, eight to twelve small curries &mdash; always ask for the local menu." }
+      ],
+      "notes": [
+        { "cat": "fact", "text": "Rusty-spotted cat, fishing cat, and leopard are all rare but possible sightings at Somawathiya." },
+        { "cat": "info", "text": "Dress modestly for the Dambulla cave climb &mdash; shoes come off at the entrance." },
+        { "cat": "scenic", "text": "The Jetwing Vil Uyana wetland at dusk is excellent for waterbirds, kingfishers, and raptors without leaving the hotel grounds." }
+      ]
+    },
+    {
+      "slug": "anuradhapura",
+      "img": "anuradhapura",
+      "kicker": "Day 17 &middot; Tuesday, June 23",
+      "place": "ANURADHAPURA",
+      "title": "Anuradhapura",
+      "epithet": "The tree that was old when Rome was new",
+      "tagline": "Bo Tree at dawn, Pidurangala at dusk",
+      "intro": "Sri Lanka's first ancient capital holds the oldest documented tree on earth, a trio of colossal stupas, and some of the finest stone carving anywhere in Asia. The day ends back at Sigiriya, climbing Pidurangala Rock for the definitive view across the jungle to Sigiriya's vertical face.",
+      "plan": {
+        "label": "Sacred City to Sunset Rock",
+        "items": [
+          { "name": "Sri Maha Bodhi", "desc": "The oldest living tree with a documented planting date, 288 BC, grown from a cutting of the original Bodhi Tree in Bodh Gaya. White or light clothing expected of all visitors." },
+          { "name": "Ruwanwelisaya Dagoba", "desc": "A 103-metre white dome built 140 BC &mdash; its scale only becomes apparent walking the full circumference." },
+          { "name": "Thuparamaya", "desc": "Sri Lanka's oldest stupa, built 247 BC, said to enshrine the collarbone relic of the Buddha." },
+          { "name": "Twin Ponds (Kuttam Pokuna)", "desc": "8th-century royal bathing pools of extraordinary engineering precision, still perfectly intact." },
+          { "name": "Pidurangala Rock", "desc": "A 30&ndash;45 minute jungle climb to a summit facing Sigiriya Rock directly &mdash; the definitive wide-angle view of Sigiriya, unavailable from the rock itself." }
+        ]
+      },
+      "lodging": {
+        "place": "Sigiriya",
+        "name": "Jetwing Vil Uyana",
+        "desc": "Second night of four at the wetland-lake property near Sigiriya.",
+        "confirmations": []
+      },
+      "wineries": [
+        { "name": "Indian Peafowl, Anuradhapura", "time": "Anytime", "desc": "In full breeding plumage in June, with spectacular displays among the ancient stonework." },
+        { "name": "Crested Serpent Eagle", "time": "Daytime", "desc": "Commonly seen soaring over the scrub around the ancient city sites." }
+      ],
+      "restaurants": [
+        { "name": "Local rice and curry, Anuradhapura town", "time": "Lunch", "desc": "A simple, fresh local meal between ancient-city sites &mdash; ask the driver for a recommendation." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Shoes come off at the Bo Tree &mdash; move slowly, it is one of the most sacred objects in the Buddhist world." },
+        { "cat": "fact", "text": "Mihintale, 12km away, is where Buddhism first arrived in Sri Lanka in 247 BC and can be added to this day with an earlier 6am departure." },
+        { "cat": "scenic", "text": "Bring a wide-angle lens for the Pidurangala summit &mdash; the ancient gardens and moats lie out geometrically below in golden light." }
+      ]
+    },
+    {
+      "slug": "minneriya",
+      "img": "minneriya",
+      "kicker": "Day 18 &middot; Wednesday, June 24",
+      "place": "MINNERIYA",
+      "title": "Sigiriya Dawn &amp; The Gathering",
+      "epithet": "Two of Asia's great wildlife mornings in one day",
+      "tagline": "A 200-metre rock at dawn, hundreds of elephants by dusk",
+      "intro": "First light brings the climb up Sigiriya Rock itself &mdash; the Lion's Paws, the 8th-century Mirror Wall graffiti, and the only surviving secular ancient frescoes in Sri Lanka. After a rest through the heat of the day, the afternoon belongs to Minneriya, where hundreds of wild elephants gather at the reservoir as the dry season tightens its grip.",
+      "plan": {
+        "label": "The Climb & The Gathering",
+        "items": [
+          { "name": "Sigiriya Rock", "desc": "A 200-metre vertical climb past the Lion's Paws platform, the Mirror Wall poetry, and the Cloud Maidens frescoes, to 5th-century palace ruins at the summit." },
+          { "name": "Minneriya National Park", "desc": "Between June and October, hundreds of wild elephants converge on the tank as seasonal water sources dry up &mdash; one of the world's great wildlife spectacles, best at 4:30&ndash;6pm golden hour." }
+        ]
+      },
+      "lodging": {
+        "place": "Sigiriya",
+        "name": "Jetwing Vil Uyana",
+        "desc": "Third night of four.",
+        "confirmations": []
+      },
+      "wineries": [
+        { "name": "Elephant Gathering, Minneriya Tank", "time": "4:30&ndash;6pm", "desc": "Up to 400 wild Asian elephants at the water's edge in golden-hour light, alongside Painted Stork and Spot-billed Pelican colonies." },
+        { "name": "Malabar Pied Hornbill, Sigiriya area", "time": "Daytime", "desc": "Found in fruiting trees around the rock and surrounding forest." }
+      ],
+      "restaurants": [
+        { "name": "Roadside rice and curry, Habarana", "time": "Lunch", "desc": "Ask the driver for the local workers' lunch spot &mdash; invariably the best food of the day, for under two dollars." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Be at the Sigiriya gates as they open, ideally among the first through, to descend before the heat builds and the tour groups arrive." },
+        { "cat": "fact", "text": "Kaudulla National Park is adjacent to Minneriya and elephant herds move between them &mdash; ask the driver which park has the better concentration that day." },
+        { "cat": "scenic", "text": "A half-day Sri Lankan cooking class near Habarana &mdash; rice and curry, pol sambol, hoppers from scratch &mdash; is a memorable way to spend a quieter evening at this base." }
+      ]
+    },
+    {
+      "slug": "polonnaruwa",
+      "img": "polonnaruwa",
+      "kicker": "Day 19 &middot; Thursday, June 25",
+      "place": "POLONNARUWA",
+      "title": "Polonnaruwa",
+      "epithet": "The medieval capital, by bicycle",
+      "tagline": "Sri Lanka's second great ancient city, far fewer crowds",
+      "intro": "Polonnaruwa was Sri Lanka's medieval capital from the 11th to 13th centuries &mdash; more compact than Anuradhapura and far less visited, and best explored slowly by rented bicycle through ancient parkland.",
+      "plan": {
+        "label": "The Ancient City by Bicycle",
+        "items": [
+          { "name": "Gal Vihara", "desc": "Four colossal Buddha figures carved into a single granite cliff face, including a 15-metre reclining figure &mdash; among the masterpieces of Buddhist art in Asia." },
+          { "name": "Royal Palace of Parakramabahu", "desc": "Seven-storey palace ruins whose elephant-frieze audience hall is considered the finest ancient stone carving in Sri Lanka." },
+          { "name": "The Vatadage", "desc": "A circular relic house with four moonstone-guarded entrances, possibly the most perfectly preserved ancient building in the country." },
+          { "name": "Lotus Pond (Nelum Pokuna)", "desc": "An octagonal bathing pool of extraordinary geometric precision, completely intact after eight centuries." }
+        ]
+      },
+      "lodging": {
+        "place": "Sigiriya",
+        "name": "Jetwing Vil Uyana",
+        "desc": "Fourth and final night at this base.",
+        "confirmations": []
+      },
+      "wineries": [
+        { "name": "Sri Lanka Junglefowl, among the ruins", "time": "Anytime", "desc": "Endemic and abundant around the ancient stonework, alongside Painted Stork at the Parakrama Samudra reservoir." }
+      ],
+      "restaurants": [
+        { "name": "Local restaurant, Polonnaruwa town", "time": "Lunch", "desc": "Simple rice and curry at the market area &mdash; ask the driver for a recommendation." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Bicycles can be rented for a few dollars at the entrance gate &mdash; the entire site is flat and easily cyclable, roughly a six-kilometre circuit." },
+        { "cat": "scenic", "text": "Arrive before the tour groups for cool morning air and quiet light across the jungle and ruins." }
+      ]
+    },
+    {
+      "slug": "kandy",
+      "img": "kandy",
+      "kicker": "Day 20 &middot; Friday, June 26",
+      "place": "KANDY",
+      "title": "Kandy",
+      "epithet": "The cultural capital, in one evening",
+      "tagline": "Botanical gardens by day, sacred drums by night",
+      "intro": "A short drive south from the Cultural Triangle, with an optional stop at a spice garden en route, brings you to Kandy in time for the Royal Botanical Gardens, a walk around the lake, and the evening puja at the Temple of the Sacred Tooth Relic.",
+      "plan": {
+        "label": "Gardens, Lake & Temple",
+        "items": [
+          { "name": "Royal Botanical Gardens, Peradeniya", "desc": "147 acres including an enormous orchid collection, a giant rubber tree planted in 1828, and an avenue of royal palms." },
+          { "name": "Kandy Lake", "desc": "The city's centrepiece, ringed by its iconic cloud wall, with the temple complex reflected in the water." },
+          { "name": "Sri Dalada Maligawa (Temple of the Tooth)", "desc": "Evening puja with traditional Kandyan drumming and ritual offerings to the most spiritually significant relic in Sri Lanka. Arrive 30 minutes early for a good position; shoes off, modest dress." }
+        ]
+      },
+      "lodging": {
+        "place": "Kandy",
+        "name": "The Radh Hotel",
+        "desc": "A boutique property steps from the Temple of the Tooth and close to the railway station, ideal for the early train to Nuwara Eliya the next morning.",
+        "confirmations": ["1 night &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [
+        { "name": "Sri Lanka Grey Hornbill, Peradeniya", "time": "Daytime", "desc": "Endemic and common in the botanical gardens, alongside the endemic Sri Lanka Hanging Parrot and Layard's Parakeet." }
+      ],
+      "restaurants": [
+        { "name": "Kandyan Muslim Hotel", "time": "Dinner", "desc": "Plate-sized naan, beef masala, and the best kottu roti in Kandy &mdash; very cheap and beloved by locals." },
+        { "name": "Empire Café", "time": "Pre-puja snack", "desc": "Coconut rotti with lunu miris, beside the Temple of the Tooth." }
+      ],
+      "notes": [
+        { "cat": "shop", "text": "Kandy's old market and gem shops reflect Sri Lanka's status as the world's third-largest gemstone exporter." },
+        { "cat": "info", "text": "Confirm the morning train details with the driver before bed &mdash; departure to Nuwara Eliya is early." }
+      ]
+    },
+    {
+      "slug": "nuwara-eliya",
+      "img": "nuwara-eliya",
+      "kicker": "Day 21 &middot; Saturday, June 27",
+      "place": "NUWARA ELIYA",
+      "title": "Nuwara Eliya",
+      "epithet": "Little England, 1,900 metres up",
+      "tagline": "Tea estates, mist, and a 130-year-old high tea",
+      "intro": "The climb into tea country brings the first cool evening of the trip &mdash; emerald plantation rows, a working tea factory tour, and high tea at a colonial institution established in 1891.",
+      "plan": {
+        "label": "Tea Country",
+        "items": [
+          { "name": "Pedro Estate / Mackwoods Labookellie", "desc": "A full walk through the tea process &mdash; plucking, withering, rolling, fermenting, drying &mdash; with a tasting session included." },
+          { "name": "Gregory Lake", "desc": "A pleasant waterfront walk with good late-afternoon light." },
+          { "name": "The Grand Hotel", "desc": "High tea in full Edwardian splendour &mdash; scones, finger sandwiches, and Ceylon tea, established 1891. Book in advance." }
+        ]
+      },
+      "lodging": {
+        "place": "Nuwara Eliya",
+        "name": "Heritance Tea Factory",
+        "desc": "The highest hotel in Sri Lanka at 6,850 feet, a converted Victorian tea factory on the Hethersett Estate. The Executive Floor gives the best views over the misty plantation.",
+        "confirmations": ["Conf. 6317681199 &middot; PIN 9277 &mdash; <b>confirmed</b>", "1 night &middot; Executive Floor Deluxe Double"]
+      },
+      "wineries": [
+        { "name": "Sri Lanka Blue Magpie", "time": "Forest edges", "desc": "An endemic priority species for the hill country, alongside the endemic Sri Lanka Wood Pigeon and Sri Lanka White-eye." }
+      ],
+      "restaurants": [
+        { "name": "The Grand Hotel High Tea", "time": "Afternoon", "desc": "The most colonial experience in Sri Lanka &mdash; English high tea in a 130-year-old hotel at 6,000 feet. Book ahead." },
+        { "name": "De Zoysa's Restaurant", "time": "Lunch", "desc": "Excellent local rice and curry, the highland version with more root vegetables and less coconut than the coast." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "A tea-picking experience can be booked directly with the hotel on arrival &mdash; traditional dress, plucking in the estate fields, then a tour of the mini factory." },
+        { "cat": "fact", "text": "Evenings here run 14&ndash;18&deg;C &mdash; the first genuinely cool night of the whole trip. Pack a layer." }
+      ]
+    },
+    {
+      "slug": "ella",
+      "img": "ella",
+      "kicker": "Day 22&ndash;24 &middot; Sun&ndash;Tue, June 28&ndash;30",
+      "place": "ELLA",
+      "title": "Ella",
+      "epithet": "One of Asia's great train journeys, then three days on foot",
+      "tagline": "Nine Arch Bridge, ridge hikes, and curd with treacle",
+      "intro": "The descent from Nuwara Eliya by rail is one of the most photogenic train journeys anywhere &mdash; rolling tea estates, the Demodara Loop spiralling inside a mountain, and a final approach into one of the most charming small stations in the world. Three nights here are spent largely on foot, between sunrise hikes and the endlessly photogenic Nine Arch Bridge.",
+      "plan": {
+        "label": "Bridge & Ridgelines",
+        "items": [
+          { "name": "Nine Arch Bridge", "desc": "A colonial-era viaduct from 1921 spanning a jungle ravine &mdash; time a visit for a train crossing, roughly every two to three hours, for the definitive shot." },
+          { "name": "Little Adam's Peak", "desc": "A moderate 45-minute sunrise climb to 1,141m with panoramic views across Ella Gap and the tea estates." },
+          { "name": "Ella Rock", "desc": "A more demanding 3&ndash;4 hour return hike to 1,400m, wilder and quieter than Little Adam's Peak, with good forest birding." },
+          { "name": "Ravana Falls", "desc": "One of Sri Lanka's widest waterfalls at 25 metres, with swimming possible in the pool below and a connection to the Ramayana epic." }
+        ]
+      },
+      "lodging": {
+        "place": "Ella",
+        "name": "98 Acres Resort & Spa",
+        "desc": "Set along a tea-estate ridge with panoramic views over Ella Gap and an infinity pool &mdash; the best photography base in town.",
+        "confirmations": ["2 nights &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [
+        { "name": "Sri Lanka Frogmouth", "time": "Dusk", "desc": "A nocturnal endemic and one of the most sought species in Sri Lanka &mdash; ask the guesthouse about local guide and roost locations." },
+        { "name": "White-faced Starling", "time": "Daytime", "desc": "Endemic to the forest canopy, alongside the Pompadour Green Pigeon along fig-lined trails." }
+      ],
+      "restaurants": [
+        { "name": "Matey Hut", "time": "Dinner", "desc": "Home-cooked Sri Lankan food &mdash; the jackfruit curry and pol sambol are particularly good." },
+        { "name": "The Down Town Roti Hut", "time": "Anytime", "desc": "Famous kottu roti with a line of locals waiting &mdash; standing at the counter is part of the experience." },
+        { "name": "Curd and treacle vendors", "time": "Dessert", "desc": "Buffalo curd topped with kithul palm treacle &mdash; the hill country's signature dessert, for under a dollar." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Sit on the right side of the carriage from Nuwara Eliya for the best view of the Nine Arch Bridge approach." },
+        { "cat": "scenic", "text": "Visit the bridge at two different times of day &mdash; the light quality changes substantially between morning and afternoon train crossings." }
+      ]
+    },
+    {
+      "slug": "arugam-bay",
+      "img": "arugam-bay",
+      "kicker": "Day 25&ndash;26 &middot; Wed&ndash;Thu, July 1&ndash;2",
+      "place": "ARUGAM BAY",
+      "title": "Arugam Bay &amp; Kumana",
+      "epithet": "Barefoot east coast, world-class birding",
+      "tagline": "From hill country to dry-zone surf town in two hours",
+      "intro": "A dramatic descent from the highlands lands you on the laid-back east coast, where a world-famous surf break sits a short walk from a mangrove lagoon and one of Sri Lanka's least-visited national parks.",
+      "plan": {
+        "label": "Lagoon to Wilderness",
+        "items": [
+          { "name": "Pottuvil Lagoon boat safari", "desc": "A mangrove ecosystem where wild elephants visit the water's edge and crocodiles bask on the banks, with a 2,000-year-old partially submerged temple as a bonus stop." },
+          { "name": "Arugam Bay Main Point", "desc": "A world-famous right-hand surf break, spectacular in golden-hour light even if you are only watching." },
+          { "name": "Kumana National Park", "desc": "Yala's wilder, quieter twin, with far fewer vehicles. June&ndash;July is peak season for migratory waterbirds across its twenty lagoons, and leopard density some say exceeds Yala's." }
+        ]
+      },
+      "lodging": {
+        "place": "Arugam Bay",
+        "name": "Hideaway Resort",
+        "desc": "An AC Heritage Room on Main Point Road, rated among the highest in the area, with breakfast included.",
+        "confirmations": ["2 nights &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [
+        { "name": "Black-necked Stork & Painted Stork, Kumana", "time": "Dawn", "desc": "Peak season for tens of thousands of migratory waterbirds across Kumana's lagoons, alongside Eurasian Spoonbill." },
+        { "name": "Kudumbigala Monastery", "time": "Dusk", "desc": "A 2,000-year-old cave monastery on a rocky outcrop inside the park, still home to resident monks." }
+      ],
+      "restaurants": [
+        { "name": "Mama's Rice & Curry", "time": "Lunch", "desc": "An all-you-can-eat local curry buffet, possibly the best value rice and curry in Sri Lanka, for under two dollars." },
+        { "name": "Salty Swamis", "time": "Lunch", "desc": "The best garden restaurant in town &mdash; ocean views from canopy beds and excellent fresh seafood." }
+      ],
+      "notes": [
+        { "cat": "info", "text": "Book the Kumana safari as a private full-day jeep through the hotel &mdash; departure is around 5am for the 35-kilometre drive south." },
+        { "cat": "fact", "text": "Kumana is directly connected to Yala's ecosystem but draws far fewer vehicles even at peak times." }
+      ]
+    },
+    {
+      "slug": "yala",
+      "img": "yala",
+      "kicker": "Day 27&ndash;28 &middot; Fri&ndash;Sat, July 3&ndash;4",
+      "place": "YALA",
+      "title": "Yala",
+      "epithet": "The world's highest density of leopards",
+      "tagline": "An anniversary day in a curved tented pod between jungle and ocean",
+      "intro": "Two nights at an all-inclusive Relais & Châteaux lodge, with a dawn safari included for each night stayed. The 25th-anniversary day itself falls here &mdash; a morning safari, a private plunge pool, and a lantern-lit dinner with the sound of the sea.",
+      "plan": {
+        "label": "Dawn Safaris",
+        "items": [
+          { "name": "Yala Block 1 / Block 5 safari", "desc": "Dawn entry for the best leopard sighting chances before the heat pushes the cats into shade. Also sloth bear, elephant, crocodile, and over 215 bird species." }
+        ]
+      },
+      "lodging": {
+        "place": "Yala",
+        "name": "Wild Coast Tented Lodge",
+        "desc": "The Cocoon Suite &mdash; a curved tented pod between the jungle and the Indian Ocean with a private plunge pool, a UNESCO Design Award winner and Michelin 2-Key property. All meals, drinks, and activities included.",
+        "confirmations": ["Conf. 6460012495 &middot; PIN 1614 &mdash; <b>confirmed</b>", "2 nights, all-inclusive &middot; 2 game drives included"]
+      },
+      "wineries": [
+        { "name": "Leopard, Yala Block 1", "time": "Dawn", "desc": "The world's highest density of leopards anywhere &mdash; a 400mm+ lens and a fast shutter reward patience." },
+        { "name": "Sri Lanka Junglefowl & Indian Roller", "time": "Daytime", "desc": "Both very common throughout, alongside Malabar Pied Hornbill in the fruiting trees." }
+      ],
+      "restaurants": [],
+      "notes": [
+        { "cat": "info", "text": "Both dawn safaris are already covered by the booking &mdash; simply arrange timing with the lodge on arrival." },
+        { "cat": "fact", "text": "Leopard, elephant, and sloth bear have all been recorded moving through the camp at night." }
+      ]
+    },
+    {
+      "slug": "udawalawe",
+      "img": "udawalawe",
+      "kicker": "Day 29 &middot; Sunday, July 5",
+      "place": "UDAWALAWE",
+      "title": "Udawalawe",
+      "epithet": "Five hundred elephants, wide open ground",
+      "tagline": "Sri Lanka's most reliable elephant park",
+      "intro": "A short drive west from Yala leads to a park known above all for elephants &mdash; over 500 free-roaming individuals across open terrain that makes them easy to find and photograph in golden morning light.",
+      "plan": {
+        "label": "Open Terrain Safari",
+        "items": [
+          { "name": "Udawalawe morning safari", "desc": "Open terrain and a large resident elephant population make this the most reliable park in Sri Lanka for elephant sightings, especially around the reservoir at dawn." },
+          { "name": "Elephant Transit Home", "desc": "An orphaned elephant rehabilitation centre half a kilometre from the park entrance, with public feeding times through the day. No riding &mdash; a genuine conservation facility." }
+        ]
+      },
+      "lodging": {
+        "place": "Udawalawe",
+        "name": "Centauria Wild Resort",
+        "desc": "On Thanamalwila Road near the park entrance, with an early 10am check-out that pairs well with an afternoon-of-arrival safari.",
+        "confirmations": ["1 night &mdash; <b>confirmed</b>"]
+      },
+      "wineries": [
+        { "name": "Elephant herds, open grassland", "time": "Dawn", "desc": "Telephoto essential &mdash; over 500 free-roaming elephants make this the park's signature sighting." },
+        { "name": "Lesser Adjutant Stork & Changeable Hawk-Eagle", "time": "Daytime", "desc": "Both regularly seen at the reservoir and forest edge." }
+      ],
+      "restaurants": [],
+      "notes": [
+        { "cat": "info", "text": "Plan the safari for the afternoon of arrival to leave the next morning free for an easy departure to Galle, given the early check-out." },
+        { "cat": "fact", "text": "Peacock displays are at their most spectacular here in June's breeding season &mdash; worth the patience." }
+      ]
+    },
+    {
+      "slug": "galle",
+      "img": "galle",
+      "kicker": "Day 30&ndash;32 &middot; Mon&ndash;Wed, July 6&ndash;8",
+      "place": "GALLE",
+      "title": "Galle Fort",
+      "epithet": "The last Sri Lankan evening, inside Dutch colonial walls",
+      "tagline": "Tailoring, ramparts, and a farewell crab dinner",
+      "intro": "Two nights inside the fort walls give time for a proper farewell to Sri Lanka &mdash; tailoring fitted and collected same-day, a full circuit of the ramparts at golden hour, and a final dinner at the country's most celebrated restaurant before a midnight flight to Hong Kong.",
+      "plan": {
+        "label": "Fort & Farewell",
+        "items": [
+          { "name": "Barefoot Gallery", "desc": "Fabric, ready-made clothing, and gifts &mdash; the non-negotiable Galle Fort purchase, on Pedlar Street." },
+          { "name": "Galle Fort rampart walk", "desc": "A 2.5-kilometre circuit past the 17th-century Dutch Reformed Church and the lighthouse, outstanding at any hour and especially at sunset." },
+          { "name": "Gangaramaya Temple, Colombo", "desc": "An eclectic complex on Beira Lake blending Sri Lankan, Thai, Indian, and Chinese architecture, with a Bo Tree grown from the same source as Anuradhapura's, and the serene Seema Malaka meditation hall built over the water." },
+          { "name": "Galle Face Green, Colombo", "desc": "A 500-metre ocean promenade built by the British in 1859 &mdash; kite sellers, street food, and a final wide Indian Ocean horizon before the airport." }
+        ]
+      },
+      "lodging": {
+        "place": "Galle",
+        "name": "Prince of Galle",
+        "desc": "A boutique property inside the fort walls, Queen Studio, with cobblestone-street access steps from Barefoot Gallery and the southern ramparts.",
+        "confirmations": ["Conf. 5420722042 &middot; PIN 3020 &mdash; <b>confirmed</b>", "2 nights"]
+      },
+      "wineries": [
+        { "name": "White-throated Kingfisher & Black-headed Ibis", "time": "Daytime", "desc": "Common across Galle and the coastal wetlands south of Colombo." }
+      ],
+      "restaurants": [
+        { "name": "Ministry of Crab", "time": "7:15pm, Jul 8", "desc": "Final dinner &mdash; <b>confirmed</b>, Ref JH-0708-1915-0202. Giant Sri Lankan lagoon crab in the Dutch Hospital Precinct, founded by Dharshan Munidasa." },
+        { "name": "Fort Bazaar Restaurant", "time": "Dinner", "desc": "Contemporary Sri Lankan inside the 16th-century fort walls &mdash; the signature ambulthiyal sour fish curry." }
+      ],
+      "notes": [
+        { "cat": "shop", "text": "Place a tailoring order by 9&ndash;10am for same-day collection &mdash; choose fabric at Barefoot, then walk straight to the tailor." },
+        { "cat": "info", "text": "CX612 departs Colombo at 00:50 on July 9 &mdash; the entire day belongs to you, with no hotel needed for the short midnight connection." },
+        { "cat": "fact", "text": "The Seema Malaka platform on Beira Lake, reflected in still water with the Colombo skyline behind, closes the loop on the Bo Tree first visited at Anuradhapura." }
+      ]
+    }
+  ],
+  "closing": {
+    "kicker": "Day 35 &middot; Saturday, July 11",
+    "title": "Homeward Bound",
+    "text": "Two nights in Hong Kong close out the journey gently before the final long flight home. CX876 departs Hong Kong at 4:05pm and lands in Dallas at 6:25pm the same day &mdash; the last leg of thirty-five days and six countries.",
+    "cards": [
+      { "icon": "flight", "h": "The Last Flight", "steps": [
+        "Cathay Pacific CX876 departs Hong Kong 4:05pm &middot; Premium Economy, seats 33D &amp; 33E",
+        "Arrives Dallas&ndash;Fort Worth 6:25pm the same day, crossing the International Date Line westbound"
+      ]},
+      { "icon": "ge", "h": "Arriving Home", "steps": [
+        "Clear US immigration and customs at DFW &mdash; Global Entry kiosks if enrolled",
+        "Collect checked baggage and declare any items acquired in Galle or Sri Lanka",
+        "A quiet car ride home closes a twenty-fifth anniversary thirty-five days in the making"
+      ]}
+    ],
+    "conf": [
+      { "leg": "CMB &rarr; HKG", "detail": "CX612 &middot; 00:50 Jul 9 &middot; Business &middot; Ref E3KDKS" },
+      { "leg": "Hong Kong", "detail": "Sheraton Hong Kong Hotel &amp; Towers &middot; Jul 9&ndash;11" },
+      { "leg": "HKG &rarr; DFW", "detail": "CX876 &middot; 4:05pm Jul 11 &middot; Premium Economy &middot; Ref E3IZ4C" }
+    ],
+    "foot": "Istuti &middot; Dhanyavaad &middot; M̀h'gōi"
+  },
+  "info": [
+    {
+      "slug": "practical",
+      "kicker": "Reference",
+      "title": "Practical Notes",
+      "blocks": [
+        { "type": "intro", "html": "General notes for moving comfortably across six countries and five climates in thirty-five days." },
+        { "type": "card", "code": "HEL", "name": "Helsinki-Vantaa Airport", "rows": [
+          { "k": "Transfer", "v": "Ring Rail to Central Station, 30 min, &euro;5.50pp" },
+          { "k": "Currency", "v": "Euro (EUR)" },
+          { "k": "Plug", "v": "Type C/F, 230V" }
+        ]},
+        { "type": "card", "code": "DEL/VNS/BOM", "name": "India", "rows": [
+          { "k": "Currency", "v": "Indian Rupee (INR)" },
+          { "k": "Plug", "v": "Type C/D/M, 230V" },
+          { "k": "Visa", "v": "e-Visa required for US citizens, apply in advance", "flag": true }
+        ]},
+        { "type": "card", "code": "MLE", "name": "Malé, Maldives", "rows": [
+          { "k": "Currency", "v": "Maldivian Rufiyaa, USD widely accepted at resorts" },
+          { "k": "Transfer", "v": "Speedboat or seaplane to Vommuli, arrange with hotel in advance" }
+        ]},
+        { "type": "card", "code": "CMB", "name": "Colombo, Sri Lanka", "rows": [
+          { "k": "Currency", "v": "Sri Lankan Rupee (LKR)" },
+          { "k": "Visa", "v": "ETA required for US citizens, apply online in advance", "flag": true },
+          { "k": "SIM", "v": "Dialog or Mobitel at the airport, roughly $5&ndash;8 for 16 days of data" }
+        ]},
+        { "type": "tipgrid", "items": [
+          { "label": "Pack light", "text": "Carry-on only across 14 hotels and 28 days makes every transfer, train, and jeep safari simpler." },
+          { "label": "Laundry", "text": "India is fast and inexpensive; the Maldives is the most expensive; Sri Lanka guesthouses are reasonable and frequent." },
+          { "label": "Drivers", "text": "A private English-speaking driver-guide for the Sri Lanka leg is consistently the single best investment of that portion of the trip." },
+          { "label": "Trains", "text": "Book 1st Class Observation carriages for the hill-country legs well in advance &mdash; they sell out weeks ahead." },
+          { "label": "Health", "text": "Consult a doctor on malaria prophylaxis before travel, and carry strong insect repellent for safari mornings and evenings." },
+          { "label": "Offline maps", "text": "Download offline maps before arriving in the Cultural Triangle, where mobile data can be patchy." }
+        ]}
+      ]
+    },
+    {
+      "slug": "flights-trains",
+      "kicker": "Reference",
+      "title": "Flights &amp; Trains",
+      "blocks": [
+        { "type": "intro", "html": "Every confirmed flight and train of the journey, in order." },
+        { "type": "transport", "title": "Flights", "cities": [
+          { "name": "Outbound", "rows": [
+            "BA 6054 &middot; DFW 4:50pm Jun 7 &rarr; Helsinki 10:45am Jun 8",
+            "Finnair 121 &middot; Helsinki 6:30pm Jun 9 &rarr; Delhi 5:20am Jun 10"
+          ]},
+          { "name": "Within the region", "rows": [
+            "IndiGo 6E6544 &middot; Varanasi 10:45am &rarr; Mumbai 12:55pm &middot; Jun 14 &middot; PNR MCJ82A",
+            "IndiGo 6E1131 &middot; Mumbai 10:50am &rarr; Malé 1:10pm &middot; Jun 15 &middot; PNR MCJ82A",
+            "SriLankan UL 116 &middot; Malé 3:35pm &rarr; Colombo 5:30pm &middot; Jun 19"
+          ]},
+          { "name": "Homeward", "rows": [
+            "Cathay Pacific CX612 &middot; Colombo 00:50am &rarr; Hong Kong 9:10am &middot; Jul 9 &middot; Business &middot; Ref E3KDKS",
+            "Cathay Pacific CX876 &middot; Hong Kong 4:05pm &rarr; Dallas 6:25pm &middot; Jul 11 &middot; Premium Economy &middot; Ref E3IZ4C"
+          ]}
+        ]},
+        { "type": "transport", "title": "Trains", "cities": [
+          { "name": "Vande Bharat Express 20176", "rows": [
+            "Agra Cantt 6:00am &rarr; Banaras (BNRS) 1:00pm &middot; Jun 11 &middot; Executive Class &middot; PNR 2516857645",
+            "Arrives Banaras Station, not Varanasi Junction &mdash; carry passports"
+          ]},
+          { "name": "Hill Country Rail", "rows": [
+            "Kandy &rarr; Nanu Oya/Heritance Tea Factory &middot; Jun 27 &middot; road transfer, line suspended for repairs",
+            "Train 11005 &middot; Ambewela 9:30am &rarr; Ella &middot; Jun 28 &middot; 1st Class Observation &middot; Ref 15217051"
+          ]}
+        ]}
+      ]
+    },
+    {
+      "slug": "phrases",
+      "kicker": "Reference",
+      "title": "Key Phrases",
+      "blocks": [
+        { "type": "intro", "html": "A handful of words in each country's language &mdash; a little effort goes a long way." },
+        {
+          "type": "phrases",
+          "groups": [
+            {
+              "name": "Greetings",
+              "rows": [
+                { "en": "Hello", "fi": ["Hei", "hoo-vaa pai-vaa"], "hi": ["Namaste", "na-mas-tay"], "dv": ["Assalaamu alaikum", "as-sa-la-mu a-lai-kum"], "si": ["Ayubowan", "ah-yoo-boh-wan"], "zh": ["Nei hou", "nay ho"] },
+                { "en": "Thank you", "fi": ["Kiitos", "key-toss"], "hi": ["Dhanyavaad", "dhun-ya-vaad"], "dv": ["Shukuriyyaa", "shoo-koo-ree-ya"], "si": ["Istuti", "is-too-tee"], "zh": ["M̀ h'gōi", "mm-goy"] },
+                { "en": "Please / excuse me", "fi": ["Ole hyvä / Anteeksi", "oh-leh hoo-vah"], "hi": ["Kripya", "kreep-ya"], "dv": ["", ""], "si": ["", ""], "zh": ["M̀ h'gōi", "mm-goy"] }
+              ]
+            },
+            {
+              "name": "Out & About",
+              "rows": [
+                { "en": "How much?", "fi": ["Mitä maksaa?", "mee-ta mak-sah"], "hi": ["Kitna?", "kit-na"], "dv": ["", ""], "si": ["Kiyadha?", "key-ya-da"], "zh": ["Géi dō chín?", "gay doh chin"] },
+                { "en": "Very beautiful", "fi": ["Hyvin kaunis", "hoo-vin kow-nis"], "hi": ["Bahut sundar", "ba-hut sun-dar"], "dv": ["Furihama", "foo-ri-ha-ma"], "si": ["Honda wasama", "hon-da wa-sa-ma"], "zh": ["", ""] },
+                { "en": "Delicious", "fi": ["", ""], "hi": ["", ""], "dv": ["", ""], "si": ["Rasai", "ra-sai"], "zh": ["Hóu sihk", "ho sik"] },
+                { "en": "Cheers!", "fi": ["Kippis!", "kip-piss"], "hi": ["", ""], "dv": ["", ""], "si": ["", ""], "zh": ["Yám sing!", "yam sing"] }
+              ]
+            }
+          ],
+          "sounds": "Finns, Maldivians, and Hong Kongers generally speak excellent English &mdash; the phrases above are appreciated more as a gesture than a necessity. In Sri Lanka, &ldquo;Ayubowan&rdquo; with hands together is the single most useful phrase, used everywhere from monasteries to hotel lobbies."
+        }
+      ]
+    }
+  ]
+}

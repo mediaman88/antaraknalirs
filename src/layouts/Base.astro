@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import { ICONS } from '../lib/scenes';
+import { ICON } from '../lib/icons';
+import trip from '../data/trip.json';
+
+interface Props { title: string; back?: boolean; current?: string; }
+const { title, back = false, current } = Astro.props;
+
+const days = trip.days;
+const info = trip.info;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = (p: string) => `${base}${p}`;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#15322E" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>{title}</title>
+  <meta name="description" content="A private travel companion." />
+</head>
+<body>
+  <div class="app">
+    <header class="hdr">
+      {back
+        ? <a class="backlink" href={href('/')}><Fragment set:html={ICON.back} />Itinerary</a>
+        : <span class="mk"><Fragment set:html={ICONS.compass} /></span>}
+      <span class="ht" set:html={trip.meta.headerTitle} />
+      <span class="spacer"></span>
+      {!back && <span class="hd" set:html={trip.meta.headerDates} />}
+      <details class="menu">
+        <summary aria-label="Menu">
+          <span class="m"><Fragment set:html={ICON.menu} /></span>
+          <span class="x"><Fragment set:html={ICON.close} /></span>
+        </summary>
+        <nav class="menu-panel">
+          <div class="menu-grp">The Days</div>
+          <a class="menu-link" href={href('/')} aria-current={current === 'home' ? 'page' : undefined}>
+            <span>Itinerary &amp; Overview</span>
+          </a>
+          {days.map((d) => (
+            <a class="menu-link" href={href(`/day/${d.slug}`)} aria-current={current === d.slug ? 'page' : undefined}>
+              <span set:html={d.title} />
+              <span class="ml-day" set:html={d.kicker?.split('&middot;')[0]} />
+            </a>
+          ))}
+          <a class="menu-link" href={href('/day/homeward')} aria-current={current === 'homeward' ? 'page' : undefined}>
+            <span>Homeward Bound</span><span class="ml-day">Last Day</span>
+          </a>
+          <div class="menu-sep"></div>
+          <div class="menu-grp">Reference</div>
+          {info.map((p) => (
+            <a class="menu-link" href={href(`/info/${p.slug}`)} aria-current={current === p.slug ? 'page' : undefined}>
+              <span set:html={p.title} />
+            </a>
+          ))}
+        </nav>
+      </details>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </div>
+</body>
+</html>

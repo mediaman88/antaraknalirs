@@ -1,0 +1,9 @@
+<svg viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="480" fill="var(--navy)"/>
+<circle cx="640" cy="130" r="40" stroke="var(--cream)" stroke-width="2" opacity=".6"/>
+<path d="M0 250 Q200 230 400 250 T800 250" stroke="var(--cream)" stroke-width="1.4" opacity=".5"/>
+<path d="M0 300 Q200 280 400 300 T800 300" stroke="var(--terra2)" stroke-width="1.6"/>
+<path d="M0 330 Q200 310 400 330 T800 330" stroke="var(--terra2)" stroke-width="1.6"/>
+<path d="M0 360 Q200 340 400 360 T800 360" stroke="var(--terra2)" stroke-width="1.6"/>
+<path d="M0 390 Q200 370 400 390 T800 390" stroke="var(--terra2)" stroke-width="1.6"/>
+<path d="M0 420 H800" stroke="var(--cream)" stroke-width="1" opacity=".5"/>
+</svg>

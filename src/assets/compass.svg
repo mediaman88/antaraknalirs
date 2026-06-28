@@ -1,0 +1,8 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" r="20" stroke="var(--cream)" stroke-width="1.6"/>
+<circle cx="24" cy="24" r="2" fill="var(--terra2)"/>
+<path d="M24 6L28 22L24 24L20 22Z" fill="var(--terra2)"/>
+<path d="M24 42L20 26L24 24L28 26Z" stroke="var(--cream)" stroke-width="1.2"/>
+<path d="M6 24L22 20L24 24L22 28Z" stroke="var(--cream)" stroke-width="1"/>
+<path d="M42 24L26 28L24 24L26 20Z" stroke="var(--cream)" stroke-width="1"/>
+</svg>

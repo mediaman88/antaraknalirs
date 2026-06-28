@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import { ICONS } from '../lib/scenes';
+import { ICON } from '../lib/icons';
+import trip from '../data/trip.json';
+
+const cover = (trip as any).cover;
+const itinerary = (trip as any).itinerary;
+const confirmations = (trip as any).confirmations;
+const gateway = (trip as any).gateway;
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = (p: string) => `${base}${p}`;
+
+const iconFor = (kind: string) =>
+  kind === 'fly' ? ICON.fly : kind === 'train' ? ICON.train : kind === 'drive' ? ICON.drive : ICON.rest;
+---
+<Base title={trip.meta.title} current="home">
+  <section class="cover">
+    <span class="cmp"><Fragment set:html={ICONS.compass} /></span>
+    <div class="ck" set:html={cover.kicker} />
+    <h1 set:html={cover.title_html} />
+    <div class="rule"></div>
+    <div class="route" set:html={cover.route} />
+    <div class="dates" set:html={cover.dates} />
+    <p class="blurb" set:html={cover.blurb} />
+  </section>
+
+  <div class="legend">
+    <div class="leg"><Fragment set:html={ICON.fly} /><b>Fly</b><span>Flight day</span></div>
+    <div class="leg"><Fragment set:html={ICON.train} /><b>Train</b><span>Rail journey</span></div>
+    <div class="leg"><Fragment set:html={ICON.drive} /><b>Drive</b><span>Road transfer</span></div>
+    <div class="leg"><Fragment set:html={ICON.rest} /><b>Stay</b><span>In place</span></div>
+  </div>
+
+  <div class="sec">
+    <div class="kick">Day by Day</div>
+    <h2 class="stitle">The Itinerary</h2>
+    <div class="srule"></div>
+    <p class="lead">Tap any day with a detail page for the full plan, restaurants, and notes.</p>
+  </div>
+
+  <div class="cards">
+    {itinerary.map((d: any) => {
+      const body = (
+        <>
+          <div class="card-date">
+            <span class="dnum" set:html={d.date.split(' ')[1]} />
+            <span class="ddow" set:html={d.dow} />
+          </div>
+          <div class="card-body">
+            <div class="card-city" set:html={d.city} />
+            <div class="card-stay" set:html={d.stay} />
+          </div>
+          <div class="card-end">
+            {d.slug
+              ? <span class="chev">&rarr;</span>
+              : <div class="mvline"><Fragment set:html={iconFor(d.kind)} /><span set:html={d.move} /></div>}
+          </div>
+        </>
+      );
+      return d.slug ? (
+        <a class={`card open`} href={href(`/day/${d.slug}`)}>{body}</a>
+      ) : (
+        <div class="card">{body}</div>
+      );
+    })}
+  </div>
+
+  <div class="panel">
+    <div class="panel-h">Flight &amp; Train Confirmations</div>
+    <div class="conf-sub">Flights</div>
+    {confirmations.flights.map((f: any) => (
+      <div class="conf-line">
+        <span class="conf-route" set:html={f.route} />
+        <span set:html={f.detail} />
+        {f.ref && <span class="conf-ref" set:html={f.ref} />}
+      </div>
+    ))}
+    <div class="conf-sub">Ground &amp; Rail</div>
+    {confirmations.ground.map((g: any) => (
+      <div class="conf-line">
+        <span class="conf-route" set:html={g.route} />
+        <span set:html={g.detail} />
+        {g.ref && <span class="conf-ref" set:html={g.ref} />}
+      </div>
+    ))}
+  </div>
+
+  <div class="sec">
+    <div class="kick">Gateway Cities</div>
+    <h2 class="stitle">Arriving &amp; Departing</h2>
+    <div class="srule"></div>
+  </div>
+  <div class="cards" style="padding-top:0">
+    <div class="tile">
+      <div class="nyc-sub" set:html={gateway.arriving.sub} />
+      {gateway.arriving.lines.map((l: string) => <div class="nyc-line" set:html={l} />)}
+    </div>
+    <div class="tile">
+      <div class="nyc-sub" set:html={gateway.departing.sub} />
+      {gateway.departing.lines.map((l: string) => <div class="nyc-line" set:html={l} />)}
+    </div>
+  </div>
+
+  <div class="foot"><div class="fr"></div>Twenty-five years &middot; one grand journey</div>
+</Base>

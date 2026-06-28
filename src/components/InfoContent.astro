@@ -1,0 +1,99 @@
+---
+const { page } = Astro.props;
+const flagOf = (b: any) => (b.flag ? ' flag' : '');
+---
+<div class="ref">
+  <div class="kick" set:html={page.kicker} />
+  <h2 class="stitle" set:html={page.title} />
+  <div class="srule"></div>
+
+  {page.blocks.map((b: any) => {
+    if (b.type === 'intro') {
+      return <p class="lead" set:html={b.html} />;
+    }
+    if (b.type === 'card') {
+      return (
+        <div class="ap-card">
+          <div class="ap-city">
+            <span class="ap-code" set:html={b.code} />
+            <span class="ap-name" set:html={b.name} />
+          </div>
+          <div class="ap-rows">
+            {b.rows.map((r: any) => (
+              <div class={`ap-row${flagOf(r)}`}>
+                <span class="ap-k" set:html={r.k} />
+                <span class="ap-v" set:html={r.v} />
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+    if (b.type === 'tipgrid') {
+      return (
+        <div class="tipgrid">
+          {b.items.map((t: any) => (
+            <div class="tg"><span class="tg-l" set:html={t.label} /><span class="tg-t" set:html={t.text} /></div>
+          ))}
+        </div>
+      );
+    }
+    if (b.type === 'tiles') {
+      return (
+        <div class="tiles">
+          {b.items.map((t: any) => (
+            <div class="tile">
+              <div class="tile-h" set:html={t.h} />
+              <div class="tile-b" set:html={t.body} />
+              {t.note && <div class="tile-n" set:html={t.note} />}
+            </div>
+          ))}
+        </div>
+      );
+    }
+    if (b.type === 'transport') {
+      return (
+        <div class="tx">
+          <div class="blabel" set:html={b.title} />
+          {b.cities.map((c: any) => (
+            <div class="tx-card">
+              <div class="tx-name" set:html={c.name} />
+              {c.rows.map((row: string) => <div class="tx-row" set:html={row} />)}
+            </div>
+          ))}
+        </div>
+      );
+    }
+    if (b.type === 'phrases') {
+      const langKeys = ['fi', 'hi', 'dv', 'si', 'zh'];
+      const tags = ['&#127467;&#127470;', '&#127470;&#127475;', '&#127474;&#127483;', '&#127473;&#127472;', '&#127469;&#127472;']; // Finland, India, Maldives, Sri Lanka, Hong Kong
+      return (
+        <div>
+          {b.groups.map((g: any) => (
+            <div class="phrase-grp">
+              <div class="phrase-grp-h" set:html={g.name} />
+              {g.rows.map((r: any) => (
+                <div class="pcard">
+                  <div class="pcard-en" set:html={r.en} />
+                  {langKeys.map((key: string, i: number) => {
+                    const L = r[key];
+                    if (!L) return null;
+                    return (
+                      <div class="plang">
+                        <span class="plang-tag" set:html={tags[i]} />
+                        <span class="plang-w" set:html={L[0]} />
+                        <span class="plang-p" set:html={L[1]} />
+                      </div>
+                    );
+                  })}
+                </div>
+              ))}
+            </div>
+          ))}
+          {b.sounds && <div class="sounds" set:html={b.sounds} />}
+        </div>
+      );
+    }
+    return null;
+  })}
+</div>

@@ -1,0 +1,40 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Album from '../../../components/Album.astro';
+import trip from '../../../data/trip.json';
+
+const days = (trip as any).days;
+const { slug } = Astro.params;
+const day = days.find((d: any) => d.slug === slug);
+if (!day) return Astro.redirect('/');
+
+const albumModules = import.meta.glob('../../../data/albums/*.json', { eager: true });
+const albumData = (albumModules[`../../../data/albums/${day.slug}.json`] as any)?.default;
+if (!albumData) return Astro.redirect(`/day/${day.slug}`);
+
+const strip = (s: string) => (s || '').replace(/&[a-z]+;/g, ' ').replace(/<[^>]+>/g, '');
+
+const candidates: { name: string; desc?: string; time?: string }[] = [
+  ...(day.plan?.items ?? []),
+  ...(day.restaurants ?? []),
+  ...(day.lodging ? [day.lodging] : []),
+];
+
+const stops = albumData.stops
+  .map((s: any) => {
+    const item = candidates.find((c) => c.name === s.match);
+    return item ? { name: item.name, desc: item.desc, time: (item as any).time, photos: s.photos } : null;
+  })
+  .filter(Boolean);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = (p: string) => `${base}${p}`;
+---
+<Base title={`${strip(day.title)} Photo Album · Trip`} back={true} current={day.slug}>
+  <div class="dwrap">
+    <div class="dkick" set:html={day.kicker} />
+    <div class="album-title">Photo Album</div>
+    <a class="album-back" href={href(`/day/${day.slug}`)}>&larr; Back to {strip(day.title)}</a>
+  </div>
+  <Album stops={stops} daySlug={day.slug} />
+</Base>

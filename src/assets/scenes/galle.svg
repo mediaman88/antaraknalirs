@@ -1,0 +1,10 @@
+<svg viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="480" fill="var(--navy)"/>
+<circle cx="640" cy="150" r="46" stroke="var(--terra2)" stroke-width="2"/>
+<path d="M0 340 H800" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M0 300 H800" stroke="var(--cream)" stroke-width="1.4"/>
+<path d="M120 300 L120 220 L140 220 L140 240 L160 240 L160 300" stroke="var(--gold)" stroke-width="1.6"/>
+<circle cx="150" cy="215" r="6" stroke="var(--gold)" stroke-width="1.4"/>
+<path d="M300 300 L760 300" stroke="var(--cream)" stroke-width="1.2"/>
+<path d="M300 300 L300 280 M380 300 L380 280 M460 300 L460 280" stroke="var(--cream)" stroke-width="1.2"/>
+<path d="M0 380 H800" stroke="var(--cream)" stroke-width="1" opacity=".5"/>
+</svg>

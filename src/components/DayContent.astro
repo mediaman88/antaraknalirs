@@ -1,0 +1,112 @@
+---
+import { SCENES } from '../lib/scenes';
+import { ICON, type IconKey } from '../lib/icons';
+
+const { day } = Astro.props;
+const scene = SCENES[day.img] ?? '';
+const tipIcon = (cat: string): string => {
+  const map: Record<string, IconKey> = { drink: 'drink', shop: 'shop', food: 'food', info: 'info', scenic: 'scenic', fact: 'fact' };
+  return ICON[map[cat] ?? 'info'];
+};
+
+const strip = (s: string) => s.replace(/&[^;]+;/g, ' ').replace(/<[^>]+>/g, '').trim();
+const mapsUrl = (name: string, place?: string) => {
+  const q = place ? `${strip(name)}, ${strip(place)}` : strip(name);
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+};
+const place = day.place ?? '';
+---
+<div class="hero">
+  <Fragment set:html={scene} />
+  <div class="hero-grad"></div>
+  <div class="hero-cap">
+    {day.place && <div class="hero-place" set:html={day.place} />}
+    <div class="hero-ttl" set:html={day.title} />
+  </div>
+</div>
+
+<div class="dwrap">
+  <div class="dkick" set:html={day.kicker} />
+  {day.epithet && <div class="epithet" set:html={day.epithet} />}
+  {day.tagline && <div class="tagline" set:html={day.tagline} />}
+  <p class="dintro" set:html={day.intro} />
+
+  {day.lodging && (
+    <div class="lodge">
+      <span class="lodge-ic"><Fragment set:html={ICON.bed} /></span>
+      <div>
+        <div class="lodge-l">Where you stay</div>
+        <a class="lodge-name map-link" href={mapsUrl(day.lodging.name, place)} target="_blank" rel="noopener" set:html={day.lodging.name} />
+        <div class="lodge-desc" set:html={day.lodging.desc} />
+        {day.lodging.confirmations?.length > 0 && (
+          <div class="lodge-conf">
+            {day.lodging.confirmations.map((c: string) => <div class="lodge-conf-row" set:html={c} />)}
+          </div>
+        )}
+      </div>
+    </div>
+  )}
+
+  {day.plan?.items?.length > 0 && (
+    <div class="block">
+      <div class="blabel" set:html={day.plan.label} />
+      <div class="stops">
+        {day.plan.items.map((it: any) => (
+          <div class="stop">
+            <div class="stop-dot"></div>
+            <div class="stop-txt">
+              <a class="stop-name map-link" href={mapsUrl(it.name, place)} target="_blank" rel="noopener" set:html={it.name} />
+              <div class="stop-desc" set:html={it.desc} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {day.wineries?.length > 0 && (
+    <div class="block">
+      <div class="blabel">Wildlife &amp; Birds</div>
+      {day.wineries.map((w: any) => (
+        <div class="res wine">
+          <div class="res-h">
+            <span class="res-ic"><Fragment set:html={ICON.paw} /></span>
+            <a class="res-name map-link" href={mapsUrl(w.name, place)} target="_blank" rel="noopener" set:html={w.name} />
+            {w.time && <span class="res-time" set:html={w.time} />}
+          </div>
+          <div class="res-desc" set:html={w.desc} />
+        </div>
+      ))}
+    </div>
+  )}
+
+  {day.restaurants?.length > 0 && (
+    <div class="block">
+      <div class="blabel">At the Table</div>
+      {day.restaurants.map((r: any) => (
+        <div class="res food">
+          <div class="res-h">
+            <span class="res-ic"><Fragment set:html={ICON.food} /></span>
+            <a class="res-name map-link" href={mapsUrl(r.name, place)} target="_blank" rel="noopener" set:html={r.name} />
+            {r.time && <span class="res-time" set:html={r.time} />}
+          </div>
+          <div class="res-desc" set:html={r.desc} />
+        </div>
+      ))}
+    </div>
+  )}
+
+  {day.notes?.length > 0 && (
+    <div class="block">
+      <div class="blabel">Good to Know</div>
+      <div class="tips">
+        {day.notes.map((n: any) => (
+          <div class="tip">
+            <span class="tip-ic"><Fragment set:html={tipIcon(n.cat)} /></span>
+            <span class="tip-tx" set:html={n.text} />
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+</div>

@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import InfoContent from '../../components/InfoContent.astro';
+import trip from '../../data/trip.json';
+
+const { slug } = Astro.params;
+const page = (trip as any).info.find((p: any) => p.slug === slug);
+if (!page) return Astro.redirect('/');
+
+const strip = (s: string) => (s || '').replace(/&[a-z]+;/g, ' ').replace(/<[^>]+>/g, '');
+---
+<Base title={`${strip(page.title)} · Trip`} back={true} current={page.slug}>
+  <InfoContent page={page} />
+  <div class="foot"><div class="fr"></div>Reference &middot; tap the menu for more</div>
+</Base>

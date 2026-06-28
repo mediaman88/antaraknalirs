@@ -1,0 +1,12 @@
+<svg viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="480" fill="var(--navy)"/>
+<circle cx="660" cy="150" r="48" stroke="var(--terra2)" stroke-width="2"/>
+<path d="M0 330 H800" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M150 330 L150 300 L190 300 L190 330" stroke="var(--cream)" stroke-width="1.4"/>
+<path d="M150 300 L170 280 L190 300" stroke="var(--cream)" stroke-width="1.4"/>
+<path d="M280 330 L280 300 L320 300 L320 330" stroke="var(--cream)" stroke-width="1.4"/>
+<path d="M280 300 L300 280 L320 300" stroke="var(--cream)" stroke-width="1.4"/>
+<path d="M120 330 Q160 345 200 330" stroke="var(--cream)" stroke-width="1.1"/>
+<path d="M260 330 Q300 345 340 330" stroke="var(--cream)" stroke-width="1.1"/>
+<path d="M420 360 Q500 340 560 365 T700 350" stroke="var(--terra)" stroke-width="1.5"/>
+<path d="M0 400 H800" stroke="var(--cream)" stroke-width="1" opacity=".5"/>
+</svg>

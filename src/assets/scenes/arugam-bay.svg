@@ -1,0 +1,7 @@
+<svg viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="480" fill="var(--navy)"/>
+<circle cx="640" cy="150" r="46" stroke="var(--terra2)" stroke-width="2"/>
+<path d="M0 320 H800" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M0 290 Q100 260 200 290 T400 290 T600 290 T800 290" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M120 360 L130 300 Q90 280 70 300 M130 300 Q170 280 190 305 M130 300 Q150 260 130 240" stroke="var(--terra)" stroke-width="1.4"/>
+<path d="M0 400 H800" stroke="var(--cream)" stroke-width="1" opacity=".5"/>
+</svg>

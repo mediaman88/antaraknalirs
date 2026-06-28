@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ICONS } from '../../lib/scenes';
+import { ICON } from '../../lib/icons';
+import trip from '../../data/trip.json';
+
+const c = (trip as any).closing;
+const iconFor = (k: string) => (k === 'flight' ? ICON.fly : ICON.ge);
+---
+<Base title="Homeward Bound · Trip" back={true} current="homeward">
+  <section class="closing">
+    <span class="cmp"><Fragment set:html={ICONS.compass} /></span>
+    <div class="dkick" set:html={c.kicker} />
+    <h2 set:html={c.title} />
+    <div class="rule"></div>
+    <p class="closing-text" set:html={c.text} />
+
+    {c.cards.map((card: any) => (
+      <div class="arr-card">
+        <div class="arr-h"><Fragment set:html={iconFor(card.icon)} /><span set:html={card.h} /></div>
+        <ol class="arr-steps">
+          {card.steps.map((step: string) => <li set:html={step} />)}
+        </ol>
+      </div>
+    ))}
+
+    <div class="closing-conf">
+      {c.conf.map((l: any) => (
+        <div><span class="leg" set:html={l.leg} /><span set:html={l.detail} /></div>
+      ))}
+    </div>
+    <div class="closing-foot" set:html={c.foot} />
+    <div class="closing-scene"><Fragment set:html={ICONS.hongkong} /></div>
+  </section>
+</Base>
