@@ -1,0 +1,18 @@
+<svg viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="800" height="480" fill="var(--navy)"/>
+<circle cx="620" cy="120" r="44" stroke="var(--gold)" stroke-width="2"/>
+<path d="M0 360 H800" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M60 360 L60 240 L80 240 L80 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M95 360 L95 180 L118 180 L118 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M133 360 L133 270 L150 270 L150 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M165 360 L165 140 L188 140 L188 360" stroke="var(--terra2)" stroke-width="1.8"/>
+<path d="M176 140 L176 110" stroke="var(--terra2)" stroke-width="1.4"/>
+<path d="M205 360 L205 220 L226 220 L226 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M240 360 L240 90 L262 90 L262 360" stroke="var(--gold)" stroke-width="2"/>
+<path d="M251 90 L251 55" stroke="var(--gold)" stroke-width="1.4"/>
+<path d="M278 360 L278 250 L300 250 L300 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M315 360 L315 160 L338 160 L338 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M352 360 L352 290 L370 290 L370 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M385 360 L385 200 L408 200 L408 360" stroke="var(--cream)" stroke-width="1.6"/>
+<path d="M0 400 H800" stroke="var(--cream)" stroke-width="1" opacity=".5"/>
+<path d="M0 420 Q200 410 400 420 T800 415" stroke="var(--terra)" stroke-width="1.4"/>
+</svg>

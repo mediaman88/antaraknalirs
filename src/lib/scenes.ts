@@ -15,13 +15,14 @@ import arugamBay from '../assets/scenes/arugam-bay.svg?raw';
 import yala from '../assets/scenes/yala.svg?raw';
 import udawalawe from '../assets/scenes/udawalawe.svg?raw';
 import galle from '../assets/scenes/galle.svg?raw';
+import hongkongScene from '../assets/scenes/hongkong.svg?raw';
 import compass from '../assets/compass.svg?raw';
 import hongkong from '../assets/hongkong.svg?raw';
 
 export const SCENES: Record<string, string> = {
   helsinki, agra, varanasi, maldives, trincomalee, sigiriya, anuradhapura,
   minneriya, polonnaruwa, kandy, 'nuwara-eliya': nuwaraEliya, ella,
-  'arugam-bay': arugamBay, yala, udawalawe, galle,
+  'arugam-bay': arugamBay, yala, udawalawe, galle, hongkong: hongkongScene,
 };
 
 export const ICONS = { compass, hongkong };
